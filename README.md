@@ -4,23 +4,18 @@ Kinda ironic, right? But hey — you're already here, so why not just go check i
 
 👉 [esraa.com]()
 
-Built with lots of code, coffee, and too many hobbies.
+Built with lots of code, and too many coffees.
 
 ---
 
 ## 🛠️ Tools & Tech That Made This Portfolio Possible
 
-Here’s what’s powering the sparkles:
-
 - **HTML5 & CSS3** — No frameworks, just hand-coded beauty  
 - **Vanilla JS** — For shimmer animations, sparkles, and interactivity  
 - **Flexbox & Grid** — To make things actually look decent  
-- **IntersectionObserver** — For scroll-triggered animations (✨ smooth entrance, baby)  
+- **IntersectionObserver** — For scroll-triggered animations 
 - **Responsive Design** — Because you never know what screen someone’s creeping on  
-- **Google Fonts** — For that Orbitron + Space Grotesk combo  
-- **Custom Favicon** — Tiny astronaut, big personality  
-- **Live Site Hosting** — GitHub Pages / Netlify / Vercel (depending on where you're deploying)  
-- **A sprinkle of ✨chaos✨** — Handmade sparkles and a floating astronaut
+- **Google Fonts** — For that Orbitron + Space Grotesk combo 
 
 ---
 
