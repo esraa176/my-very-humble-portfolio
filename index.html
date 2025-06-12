@@ -14,20 +14,12 @@
         }
         
         :root {
-            /* --primary-purple: #8B5CF6; */
-            /* --primary-blue: #3279AF; */
-            /* --secondary-blue: #3B82F6; */
             --accent-pink: #F472B6;
             --dark-bg: #0A0A0F;
             --card-bg: rgba(255, 255, 255, 0.05);
             --text-primary: #FFFFFF;
             --text-secondary: #B8BCC8;
-            /* --glow-color: #8B5CF6; */
-            --primary-purple: #F472B6;
-            --primary-blue: #F472B6;
-            --secondary-blue: #F472B6;
-            --accent-pink: #F472B6;
-            --glow-color: #F472B6;
+            --deep-blue: #1130c8;
         }
         
         body {
@@ -72,8 +64,8 @@
         /* Floating Astronaut */
         .astronaut {
             position: absolute;
-            top: 50%;
-            left: 47%;
+            top: 22%;
+            left: 46%;
             transform: translateX(-50%);
             z-index: 1;
             animation: float 4s ease-in-out infinite;
@@ -179,11 +171,14 @@
             justify-content: space-between;
             align-items: center;
             gap: 1rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
         }
 
         .nav-links {
             display: flex;
             gap: 1rem;
+            font-weight: 600;
         }
 
         .nav-contacts {
@@ -201,7 +196,7 @@
 
         .nav a:hover {
             color: var(--text-primary);
-            background: var(--primary-purple);
+            background: var(--accent-pink);
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(139, 92, 246, 0.4);
             border-radius: 25px;
@@ -218,7 +213,7 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            background: linear-gradient(45deg, var(--primary-purple), var(--secondary-blue), var(--accent-pink));
+            background: linear-gradient(45deg, var(--accent-pink), var(--accent-pink), var(--accent-pink));
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -306,8 +301,9 @@
 
         .tab-button.active,
         .tab-button:hover {
-            background: var(--primary-purple);
-            color: white;
+            background: var(--accent-pink);
+            color: var(--deep-blue);
+            font-weight: 700;
             box-shadow: 0 5px 20px rgba(139, 92, 246, 0.4);
         }
 
@@ -364,12 +360,12 @@
         }
         
         .tech-tag {
-            background: var(--primary-purple);
-            color: white;
+            background: var(--accent-pink);
+            color: var(--deep-blue);
             padding: 0.3rem 0.8rem;
             border-radius: 20px;
             font-size: 0.8rem;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .project-footer {
@@ -386,7 +382,7 @@
         }
 
         .github-link:hover {
-            color: var(--primary-purple);
+            color: var(--accent-pink);
             text-decoration: underline;
         }
         
@@ -407,7 +403,7 @@
         }
 
         .social-link:hover {
-            background: var(--primary-purple);
+            background: var(--accent-pink);
             transform: translateY(-5px) scale(1.1);
             box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
             border-radius: 25px;
@@ -417,6 +413,7 @@
             width: 24px;
             height: 24px;
             display: block;
+            filter: brightness(0) invert(1);
         }
         
         /* Responsive Design */
@@ -475,32 +472,32 @@
     
     <nav class="nav">
         <div class="nav-links">
-            <a href="#home">Home</a>
+            <a href="#intro">Intro</a>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
         </div>
         <div class="nav-contacts">
             <a href="mailto:esraa.emad017@gmail.com" class="social-link" title="Email" target="_blank" rel="noopener noreferrer">
-                <img src="images/icons/email.png" alt="Email Icon" class="icon-img" />
+                <img src="images/icons/mail2.svg" alt="Email Icon" class="icon-img" />
             </a>
             <a href="https://github.com/esraa176" class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
-                <img src="images/icons/github2.png" alt="Email Icon" class="icon-img" />
+                <img src="images/icons/github3.svg" alt="GitHub Icon" class="icon-img" />
             </a>
             <a href="https://linkedin.com/in/esraa-emad" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <img src="images/icons/linkedin.png" alt="Email Icon" class="icon-img" />
+                <img src="images/icons/linkedin2.svg" alt="LinkedIn Icon" class="icon-img" />
             </a>
             <a href="https://medium.com/@esraa.emad017" class="social-link" title="Medium" target="_blank" rel="noopener noreferrer">
-                <img src="images/icons/medium.png" alt="Email Icon" class="icon-img" />
+                <img src="images/icons/medium.svg" alt="Medium Icon" class="icon-img" />
             </a>
         </div>
     </nav>
     
-    <section id="home" class="header">
+    <section id="intro" class="header">
         <h1 class="constellation-name" id="animated-name"></h1>
         <p class="subtitle">
-            An android developer & a professional hobby collector — currently polishing my Kotlin skills, 
-            exploring Jetpack Compose, and figuring out which hobby to obsess over next. Building apps, collecting side quests, and learning something new every day.
+            An android developer & a professional hobby collector — currently based in Cairo, Egypt and working on polishing my Kotlin skills, 
+            exploring Backend with GoLang, and figuring out which hobby to obsess over next. Building apps, collecting side quests, and learning something new every day.
         </p>
     </section>
     
@@ -511,11 +508,13 @@
                 <img src="images/about-me.jpg" alt="a pic of me!" class="about-img" />
             </div>
             <div class="about-text">
-                <p>I’m an Android developer based in Cairo, Egypt with a curious mind and a heart full of side quests. I’ve debugged at dawn, studied Clean Architecture at midnight, and hosted coding competitions just for the fun of it.</p>
+                <p>I’m an Android developer with a curious mind and a heart full of side quests. I’ve debugged at dawn, studied Clean Architecture at midnight, and hosted coding competitions just for the fun of it.</p>
 
+                <br>
                 <p>When I’m not wrangling Jetpack Compose or obsessing over build flavors, you’ll probably find me diving into a new hobby (video games? sure. learning Korean? always.), journaling existential thoughts, or reading a book I <em>swore</em> I wouldn’t start yet.</p>
 
-                <p>I believe code should not only work — it should feel good. Like cozy-good. Like reusable-components-and-readable-architecture good.</p>    
+                <br>
+                <p>For the curious: I have a Bachelor's degree in Computer Science, plus a Nanodegree in Android Development from Udacity.</p>
             </div>
         </div>
     </section>
@@ -528,9 +527,9 @@
                 <!-- <button class="tab-button" data-tab="2">Previous Role</button> -->
             </div>
             <div class="tab-content active" id="tab-1">
-                <h3>Android Developer – Careem Technologies</h3>
-                <p class="company">July 2023 – Present</p>
-                <p class="description">Worked on the Food Checkout squad in the SuperApp. 
+                <h3>Android Developer – Careem Technologies (Food Checkout Squad)</h3>
+                <p class="company">July 2023 – March 2025</p>
+                <p class="description">Worked on the Food mini-app in the SuperApp. 
                     Focused on refining deep link handling, migrating the analytics system, 
                     and contributing to SDUI and Jetpack Compose migrations. Participated in 
                     testing and QA automation, shadowed on-call responsibilities, and supported 
@@ -619,9 +618,7 @@
                     <span class="tech-tag">Dart</span>
                     <span class="tech-tag">Firebase Authentication</span>
                 </div>
-                <div class="project-footer">
-                    <a href="#" class="github-link">github ↗</a>
-                </div>
+                <div class="project-footer" style="display: none;"></div>
             </div>
         </div>
     </section>
@@ -739,6 +736,10 @@
                 document.getElementById(`tab-${tabId}`).classList.add('active');
             });
         });
-    </script>
+</script>
+    <footer style="text-align: center; padding: 2rem 0; font-size: 0.7rem; color: var(--text-secondary); line-height: 1.8;">
+        Designed by Esraa Emad.<br>
+        All rights reserved. ©
+    </footer>
 </body>
 </html>
